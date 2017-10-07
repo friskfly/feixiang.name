@@ -1,0 +1,4 @@
+baseURL = "http://feixiang.name/"
+languageCode = "zh-CN"
+title = "FX的所见所闻，所惑所思"
+theme = "ananke"
