@@ -118,14 +118,3 @@ bound a
 ```
 
 而 MDN 的 `polyfill` 是没有实现这些细节的，所以用的时候如果依赖于这些，是要注意的。
-<div id="disqus_thread"></div>
-<script>var disqus_shortname = 'friskfly';
-var disqus_identifier = '2016/03/24/hello-world/';
-var disqus_title = 'Hello World';
-var disqus_url = 'http://friskfly.github.io/2016/03/24/hello-world/';
-(function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();</script>
-<script id="dsq-count-scr" src="//friskfly.disqus.com/count.js" async></script>

@@ -1,4 +1,9 @@
-baseURL = "http://feixiang.name/"
+baseURL = "https://feixiang.name/"
 languageCode = "zh-CN"
 title = "FX的所见所闻，所惑所思"
 theme = "ananke"
+disqusShortname = "friskfly"
+[params]
+  description = "FX的所见所闻，所惑所思"
+  twitter = "https://twitter.com/friskfly"
+  github = "https://github.com/friskfly"
