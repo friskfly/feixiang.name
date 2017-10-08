@@ -1,7 +1,7 @@
 baseURL = "https://feixiang.name/"
 languageCode = "zh-CN"
 title = "FX的所见所闻，所惑所思"
-theme = "ananke"
+theme = "ananke-mod"
 disqusShortname = "friskfly"
 [params]
   description = "FX的所见所闻，所惑所思"
