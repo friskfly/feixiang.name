@@ -3,44 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://feixiang.name/posts/%E5%8D%81%E4%B8%80%E9%95%BF%E5%81%87/</loc>
+    <loc>https://www.feixiang.name/posts/termux/</loc>
+    <lastmod>2017-11-12T09:22:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.feixiang.name/posts/%E5%8D%81%E4%B8%80%E9%95%BF%E5%81%87/</loc>
     <lastmod>2017-10-08T11:30:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://feixiang.name/posts/ban-ip/</loc>
+    <loc>https://www.feixiang.name/posts/ban-ip/</loc>
     <lastmod>2016-04-20T11:15:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://feixiang.name/posts/monitor-dynamic-inject-js/</loc>
+    <loc>https://www.feixiang.name/posts/monitor-dynamic-inject-js/</loc>
     <lastmod>2016-04-12T17:36:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://feixiang.name/posts/about-js-bind/</loc>
+    <loc>https://www.feixiang.name/posts/about-js-bind/</loc>
     <lastmod>2016-03-24T17:09:05+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://feixiang.name/categories/</loc>
+    <loc>https://www.feixiang.name/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://feixiang.name/</loc>
-    <lastmod>2017-10-08T11:30:02+08:00</lastmod>
+    <loc>https://www.feixiang.name/</loc>
+    <lastmod>2017-11-12T09:22:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://feixiang.name/posts/</loc>
-    <lastmod>2017-10-08T11:30:02+08:00</lastmod>
+    <loc>https://www.feixiang.name/posts/</loc>
+    <lastmod>2017-11-12T09:22:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://feixiang.name/tags/</loc>
+    <loc>https://www.feixiang.name/tags/</loc>
     <priority>0</priority>
   </url>
   

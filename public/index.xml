@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>FX的所见所闻，所惑所思</title>
-    <link>https://feixiang.name/</link>
-    <description>Recent content on FX的所见所闻，所惑所思</description>
+    <title>FX思惑</title>
+    <link>https://www.feixiang.name/</link>
+    <description>Recent content on FX思惑</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Oct 2017 11:30:02 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Nov 2017 09:22:36 +0800</lastBuildDate>
     
-	<atom:link href="https://feixiang.name/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.feixiang.name/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>玩一玩Termux</title>
+      <link>https://www.feixiang.name/posts/termux/</link>
+      <pubDate>Sun, 12 Nov 2017 09:22:36 +0800</pubDate>
+      
+      <guid>https://www.feixiang.name/posts/termux/</guid>
+      <description>Termux是一款Android上的Linux环境终端模拟器，可以在上面安装各种linux 命令行软件 python、golang、nodejs&amp;hellip; 项目github主页
+安装app后，首先安装 openssh pkg install openssh 搭建ssh服务。 https://termux.com/ssh.html, 安装完之后执行 sshd 即可启动一个ssh server, 默认端口 8022，就下来就可以用电脑ssh连接手机了。 Termux sshd 不支持密码登录，所以得把你的PC上的id_rsa.pub 写入到 Termux的 ~/.ssh/authorized_keys 中，如果没有的话用 ssh-keygen 生成一个。 复制到手机比较麻烦，我这里先通过QQ传到手机，在termux上执行 termux-setup-storage 可以让termux访问手机存储，找到QQ的目录 Tencent 下面的接收文件目录。 cat id_rsa.pub &amp;gt; ~/.ssh/authorized_keys 即可访问，例 ssh 192.168.1.3 -p 8022。
+连上了ssh，就是发挥你想象力的时候了。
+如果要随时随地远程访问可以配合使用 autossh + 反向连接 http://www.cnblogs.com/eshizhan/archive/2012/07/16/2592902.html
+能访问后改成清华软件源可以软件包下载速度: https://mirror.tuna.tsinghua.edu.cn/help/termux/
+习惯zsh的可以安装ohmyzsh https://github.com/Cabbagec/termux-ohmyzsh</description>
+    </item>
+    
+    <item>
       <title>十一长假流水</title>
-      <link>https://feixiang.name/posts/%E5%8D%81%E4%B8%80%E9%95%BF%E5%81%87/</link>
+      <link>https://www.feixiang.name/posts/%E5%8D%81%E4%B8%80%E9%95%BF%E5%81%87/</link>
       <pubDate>Sun, 08 Oct 2017 11:30:02 +0800</pubDate>
       
-      <guid>https://feixiang.name/posts/%E5%8D%81%E4%B8%80%E9%95%BF%E5%81%87/</guid>
+      <guid>https://www.feixiang.name/posts/%E5%8D%81%E4%B8%80%E9%95%BF%E5%81%87/</guid>
       <description>十一在高速公路、泰兴、南通老家、杭州各呆了两天。
 1号一整天都在高速公路上，再也不想经历这样的马拉松式的堵车。
 2号小袁老师弟弟结婚，在泰兴住了2天。
@@ -31,30 +45,30 @@
     
     <item>
       <title>简易的基于iptables和nginx访问日志屏蔽爬虫的方法</title>
-      <link>https://feixiang.name/posts/ban-ip/</link>
+      <link>https://www.feixiang.name/posts/ban-ip/</link>
       <pubDate>Wed, 20 Apr 2016 11:15:27 +0000</pubDate>
       
-      <guid>https://feixiang.name/posts/ban-ip/</guid>
+      <guid>https://www.feixiang.name/posts/ban-ip/</guid>
       <description>最近网站数据总是被人爬取，一天爬取几百万次,还会经常换ip。写了个简单粗暴的shell脚本，根据nginx访问日志，分析出最像爬虫的ip，然后用iptable来封掉这个ip。
 /sbin/iptables -nvL INPUT | awk &#39;{if(NR&amp;gt;2)print $8}&#39; &amp;gt; /dev/shm/nginx_iptable_list # 列出当前封禁ip的名单,写到 /dev/shm/nginx_iptable_list 中 # /dev/shm是一个tmpfs基于内存的文件系统，有利于加快速度 # iptables -n 表示用数字形式显示ip地址和端口号，不然会用hostname来显示 # iptables -v 显示详细的调试信息 # iptables -L INPUT 列出INPUT，不指定则列出所有 这里我们封杀爬虫只需要INPUT就行 # awk NR是特殊变量,这边用来过滤掉数据前两行  tail -n 100000 /var/log/nginx/access.log | grep -i -v -E &#39;(192.168.*)|(127.0.0.1)&#39; | awk &#39;{print $1}&#39; | sort | uniq -c | sort -rn | awk &#39;{if($1&amp;gt;&#39;1000&#39;)print $2}&#39; | sort | uniq &amp;gt; /dev/shm/nginx_ip_to_ban_pre # 这里用了简单粗暴的方法分析出最近100000万次请求，同一个ip访问超过1000次的ip。 # grep -i 忽略大小写 -v 取反，表示选择不匹配的 -E 正则表达式 # &#39;(192.</description>
     </item>
     
     <item>
       <title>监控动态创建的script标签</title>
-      <link>https://feixiang.name/posts/monitor-dynamic-inject-js/</link>
+      <link>https://www.feixiang.name/posts/monitor-dynamic-inject-js/</link>
       <pubDate>Tue, 12 Apr 2016 17:36:55 +0000</pubDate>
       
-      <guid>https://feixiang.name/posts/monitor-dynamic-inject-js/</guid>
+      <guid>https://www.feixiang.name/posts/monitor-dynamic-inject-js/</guid>
       <description>动态创建script标签很常用，比如jsonp、amd 等等技术都会用到， 有时候我们会希望能够监控和拦截动态创建的script标签。 下面提供了一种代理document.createElement的方法来监控。
 var _createElement = document.createElement var __define_src = function(script){ var src Object.defineProperty(script,&#39;src&#39;,{ get : function(){ return src }, set : function(s){ src = s script.setAttribute(&#39;src&#39;,s) } }) var _setAttribute = script.setAttribute script.setAttribute = function(){ var args = Array.prototype.slice.call(arguments) if(args[0] === &#39;src&#39;){ //do something here console.log(&#39;setAttribute&#39;,args[1]) } _setAttribute.apply(script,args) } } document.createElement = function(tagName){ var dom dom = _createElement.call(document,tagName) if(tagName.toLowerCase() === &#39;script&#39;){ __define_src(dom) } return dom }  上面的代码加载完后，就可以监控到 script.</description>
     </item>
     
     <item>
       <title>关于JS函数的bind方法</title>
-      <link>https://feixiang.name/posts/about-js-bind/</link>
+      <link>https://www.feixiang.name/posts/about-js-bind/</link>
       <pubDate>Thu, 24 Mar 2016 17:09:05 +0000</pubDate>
       
-      <guid>https://feixiang.name/posts/about-js-bind/</guid>
+      <guid>https://www.feixiang.name/posts/about-js-bind/</guid>
       <description>昨天被人问到js的bind的作用是什么？
 这个倒还能回答出来，bind 之后返回一个新的函数，这个函数可以保持传递的this上下文。
 接着又问了，那么bind两次不同的上下文会怎样？

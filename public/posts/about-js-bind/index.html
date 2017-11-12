@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>FX的所见所闻，所惑所思  | 关于JS函数的bind方法</title>
+    <title>FX思惑  | 关于JS函数的bind方法</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.29" />
+    <meta name="generator" content="Hugo 0.30.2" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     
 
-    <link href='https://feixiang.name/dist/main.css' rel='stylesheet' type="text/css" />
+    <link href='https://www.feixiang.name/dist/main.css' rel='stylesheet' type="text/css" />
     
       
     
@@ -33,11 +33,12 @@ function test(){ console.log(this.a) } var bind1 = test.bind({a:1}) //第一次 
 查一下MDN，Function.prototype.bind() , 并没有解释bind两次会怎样。 但是他提供了一个Polyfill，可以了解下bind的实现。
 if (!Function.prototype.bind) { Function.prototype.bind = function(oThis) { if (typeof this !== &#39;function&#39;) { // closest thing possible to the ECMAScript 5 // internal IsCallable function throw new TypeError(&#39;Function.prototype.bind - what is trying to be bound is not callable&#39;); } var aArgs = Array." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://feixiang.name/posts/about-js-bind/" />
+<meta property="og:url" content="https://www.feixiang.name/posts/about-js-bind/" />
 
 
 
 <meta property="article:published_time" content="2016-03-24T17:09:05&#43;00:00"/>
+
 <meta property="article:modified_time" content="2016-03-24T17:09:05&#43;00:00"/>
 
 
@@ -62,6 +63,7 @@ function test(){ console.log(this.a) } var bind1 = test.bind({a:1}) //第一次 
 if (!Function.prototype.bind) { Function.prototype.bind = function(oThis) { if (typeof this !== &#39;function&#39;) { // closest thing possible to the ECMAScript 5 // internal IsCallable function throw new TypeError(&#39;Function.prototype.bind - what is trying to be bound is not callable&#39;); } var aArgs = Array.">
 
 
+<meta itemprop="datePublished" content="2016-03-24T17:09:05&#43;00:00" />
 <meta itemprop="dateModified" content="2016-03-24T17:09:05&#43;00:00" />
 <meta itemprop="wordCount" content="303">
 
@@ -89,7 +91,7 @@ if (!Function.prototype.bind) { Function.prototype.bind = function(oThis) { if (
     <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
-    <a href="https://feixiang.name/" class="f3 fw2 hover-white no-underline white-90 dib">
+    <a href="https://www.feixiang.name/" class="f3 fw2 hover-white no-underline white-90 dib">
       FX
     </a>
     <div class="flex-l items-center">
@@ -281,8 +283,15 @@ console.log(b.name)
   <div class="bg-light-gray pa3">
     <ul>
       <li class="list b mb3">
-        3 More Posts
+        4 More Posts
       </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/posts/termux/" class="link ph2 pv2 db black">
+            玩一玩Termux
+          </a>
+        </li>
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
@@ -325,8 +334,8 @@ console.log(b.name)
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://feixiang.name/" >
-    &copy; 2017 FX的所见所闻，所惑所思
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://www.feixiang.name/" >
+    &copy; 2017 FX思惑
   </a>
   
 
@@ -357,7 +366,7 @@ console.log(b.name)
   </div>
 </footer>
 
-    <script src="https://feixiang.name/dist/app.bundle.js" async></script>
+    <script src="https://www.feixiang.name/dist/app.bundle.js" async></script>
 
   </body>
 </html>
