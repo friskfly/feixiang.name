@@ -14,7 +14,7 @@ pre  code {
 
 }
 
-pre {
+pre, code {
   background-color: #222;
   color: #ddd;
   white-space: pre;

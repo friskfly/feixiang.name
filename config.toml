@@ -8,7 +8,3 @@ disqusShortname = "friskfly"
   twitter = "https://twitter.com/friskfly"
   github = "https://github.com/friskfly"
   instagram = "https://www.instagram.com/friskfly/"
-
-[Permalinks]
-  post = "/:slug/"
-  page = "/:slug"
